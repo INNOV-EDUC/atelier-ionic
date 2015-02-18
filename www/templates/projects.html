@@ -1,0 +1,17 @@
+<ion-view view-title="Projects">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="project in projects">
+        <div class="nom" id="nom-button">
+          {{ project.name }}<br>    
+          {{ project.date }}, par {{ project.inventorist.username }}
+        </div>
+      
+        <button class="content-button" id="charger-button">
+          <img src="img/icones_layout/charger_projet.png">
+          <div class="button-title">Charger</div>
+        </button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
